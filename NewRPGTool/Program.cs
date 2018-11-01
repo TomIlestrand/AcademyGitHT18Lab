@@ -9,6 +9,11 @@ namespace NewRPGTool
             var rnd = new Random();
             Console.WriteLine("What do you need?");
             var command = Console.ReadLine();
+            if (command == "roll d20")
+            {
+                var diceRoll = rnd.Next(20) + 1;
+                Console.WriteLine($"Your dice roll is: {diceRoll}");
+            }
             if (command == "names")
             {
                 var allNames = new[] { "Briana", "Ben", "David", "Dana", "Felicia", "Felix" };
@@ -16,6 +21,8 @@ namespace NewRPGTool
                 Console.WriteLine(allNames[randomIndex]);
             }
             Console.ReadKey();
+
+            
         }
     }
 }
