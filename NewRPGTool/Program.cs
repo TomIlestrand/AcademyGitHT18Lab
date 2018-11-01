@@ -16,7 +16,7 @@ namespace NewRPGTool
             }
             if (command == "names")
             {
-                var allNames = new[] { "Legolas", "Arwen", "David", "Dana", "Felicia", "Felix" };
+                var allNames = new[] { "Legolas", "Arwen", "Bjorn", "Sam", "Bard", "Morgoth" };
                 var randomIndex = rnd.Next(allNames.Length);
                 Console.WriteLine(allNames[randomIndex]);
             }
